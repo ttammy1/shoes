@@ -1,0 +1,808 @@
+@import url('reset.css');
+
+/* ========== 全域設定 ========== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    max-width: 1296px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: 40px;
+    margin-left: 48px;
+}
+
+.header-nav a {
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-user {
+    margin-left: auto;
+}
+
+.header-user img {
+    width: 32px;
+    height: 32px;
+}
+
+/* ========== BANNER1 ========== */
+.banner1 {
+    background-image: url('../img/index/banner1.png');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+}
+
+.banner1-content {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding-top: 289px;
+    padding-left: 200px;
+}
+
+.banner1-content h1 {
+    font-size: 64px;
+    font-family: "Noto Sans TC";
+    letter-spacing: 3.2px;
+    font-weight: 800;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.banner1-content h2 {
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    margin-bottom: 60px;
+}
+
+.button {
+    border-radius: 4px;
+    background: #C0FA73;
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: inline-block;
+}
+
+/* ========== 新品上市 ========== */
+.new {
+    max-width: 1296px;
+    width: 100%;
+    margin: 64px auto;
+    padding: 0 24px;
+}
+
+.new h1 {
+    text-align: center;
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    margin-bottom: 12px;
+}
+
+.new h2 {
+    text-align: center;
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin-bottom: 32px;
+}
+
+.new ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+}
+
+.new-card {
+    flex-basis: calc(25% - 18px);
+}
+
+.new-card a {
+    text-decoration: none;
+}
+
+.new-card img {
+    width: 100%;
+    background-color: #F1F3F7;
+}
+
+.new-card h3 {
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.new-card h4 {
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+}
+
+/* ========== 熱銷補貨 ========== */
+.card {
+    max-width: 1296px;
+    width: 100%;
+    margin: 64px auto;
+    padding: 0 24px;
+}
+
+.card h1 {
+    color: #212529;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.card ul {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.hot-card {
+    position: relative;
+    flex: 1;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    background-color: #F1F3F7;
+}
+
+.card span {
+    color: #57A203;
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    background-color: #F5FEE7;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ========== BANNER2 ========== */
+.banner2 {
+    background-image: url('../img/index/banner2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 100px 24px;
+}
+
+.banner2-content {
+    text-align: center;
+    max-width: 1296px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner2-content h1 {
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 2.4px;
+    margin-bottom: 16px;
+}
+
+.banner2-content span {
+    color: #C0FA73;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 2px;
+    padding: 0 24px;
+}
+
+.banner2-content h2 {
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1.6px;
+    margin-bottom: 32px;
+}
+
+.banner2-content h3 {
+    color: #ADB5BD;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+/* ========== 系列選購 ========== */
+.card2 {
+    max-width: 1296px;
+    width: 100%;
+    margin: 64px auto;
+    padding: 0 24px;
+}
+
+.card2 h1 {
+    color: #212529;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.card2 ul {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.item-card {
+    position: relative;
+    flex: 1;
+}
+
+.card2 a {
+    text-decoration: none;
+}
+
+.card2 img {
+    width: 100%;
+}
+
+.card-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.card-text h2 {
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1.4px;
+}
+
+.card-text h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1.2px;
+}
+
+.card2 .item-card a:hover h2 {
+    color: #C0FA73;
+}
+
+/* ========== 相片牆 ========== */
+.style {
+    max-width: 1296px;
+    width: 100%;
+    margin: 0 auto 48px;
+    padding: 0 24px;
+}
+
+.style h1 {
+    color: #212529;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin-bottom: 16px;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;
+    grid-template-areas:
+        "pic2  pic3  pic4 pic5 pic1  pic1"
+        "pic12 pic12 pic6 pic7 pic1  pic1"
+        "pic12 pic12 pic8 pic9 pic10 pic11";
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pic1 { grid-area: pic1; }
+.pic2 { grid-area: pic2; }
+.pic3 { grid-area: pic3; }
+.pic4 { grid-area: pic4; }
+.pic5 { grid-area: pic5; }
+.pic6 { grid-area: pic6; }
+.pic7 { grid-area: pic7; }
+.pic8 { grid-area: pic8; }
+.pic9 { grid-area: pic9; }
+.pic10 { grid-area: pic10; }
+.pic11 { grid-area: pic11; }
+.pic12 { grid-area: pic12; }
+
+/* ========== DISCOUNT ========== */
+.discount {
+    background-color: #E8FEC5;
+    width: 100%;
+}
+
+.discount-content {
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.discount h2 {
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.discount .button {
+    background-color: #212529;
+    color: #fff;
+}
+
+/* ========== FOOTER ========== */
+.footer-nav {
+    max-width: 1296px;
+    width: 100%;
+    margin: 64px auto 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.footer-nav > a {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #212529;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+}
+
+.footer-nav ul a {
+    padding: 24px 0;
+}
+
+.copyright {
+    max-width: 1296px;
+    width: 100%;
+    margin: 0 auto 64px;
+    padding: 32px 24px 0;
+    border-top: 1px solid gainsboro;
+}
+
+.copyright h4 {
+    text-align: center;
+    color: #6C757D;
+    margin-bottom: 4px;
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.7px;
+}
+
+/* ========================================
+   RWD - Tablet (768px ~ 1024px)
+======================================== */
+@media screen and (max-width: 1024px) {
+    .banner1-content {
+        padding-left: 60px;
+    }
+
+    .new-card {
+        flex-basis: calc(50% - 12px);
+    }
+
+    .card ul {
+        flex-wrap: wrap;
+    }
+
+    .hot-card {
+        flex-basis: calc(50% - 12px);
+    }
+
+    .card2 ul {
+        flex-wrap: wrap;
+    }
+
+    .item-card {
+        flex-basis: calc(50% - 12px);
+    }
+
+    .photo {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "pic1 pic1 pic2 pic3"
+            "pic1 pic1 pic4 pic5"
+            "pic12 pic12 pic6 pic7"
+            "pic12 pic12 pic8 pic9"
+            "pic10 pic11 pic10 pic11";
+    }
+}
+
+/* ========================================
+   RWD - Mobile (480px 以下)
+======================================== */
+@media screen and (max-width: 480px) {
+    
+    /* ========== HEADER ========== */
+    .header {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .logo,
+    .header-user {
+        flex-basis: 50%;
+        padding: 12px 20px;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .header-user {
+        order: 2;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-nav {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+        gap: 0;
+    }
+
+    .header-nav li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .header-nav a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    .nav1 {
+        background-color: #E8FEC5;
+    }
+
+    .nav2 {
+        background-color: #F5FEE7;
+    }
+
+    /* ========== BANNER1 ========== */
+    .banner1 {
+        background-image: url(../img/index/Banner-sm.png);
+        height: 480px;
+    }
+
+    .banner1-content {
+        max-width: 327px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 155px 12px 0;
+    }
+
+    .banner1-content h1 {
+        font-size: 48px;
+        letter-spacing: 2.4px;
+    }
+
+    .banner1-content h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+
+    /* ========== 新品上市 ========== */
+    .new {
+        margin: 48px auto;
+        padding: 0 12px;
+    }
+
+    .new h1 {
+        font-size: 32px;
+        letter-spacing: 1.6px;
+    }
+
+    .new h2 {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        margin-bottom: 24px;
+    }
+
+    .new ul {
+        gap: 24px 12px;
+    }
+
+    .new-card {
+        flex-basis: calc(50% - 6px);
+    }
+
+    .new-card h3 {
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .new-card h4 {
+        font-size: 14px;
+    }
+
+    /* ========== 熱銷補貨 ========== */
+    .card {
+        padding: 0;
+        margin: 48px 0;
+    }
+
+    .card h1 {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        padding: 0 24px;
+    }
+
+    .card ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 16px;
+        margin-top: 12px;
+        padding-left: 12px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .card ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hot-card {
+        flex: 0 0 calc(100vw - 60px);
+    }
+
+    .hot-card:last-child {
+        margin-right: 12px;
+    }
+
+    .card span {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    /* ========== BANNER2 ========== */
+    .banner2 {
+        background-image: url('../img/index/banner2-sm.png');
+        padding: 64px 24px;
+    }
+
+    .banner2-content h1 {
+        font-size: 32px;
+        letter-spacing: 1.6px;
+    }
+
+    .banner2-content span {
+        font-size: 28px;
+        letter-spacing: 1.4px;
+        padding: 0 12px;
+        display: inline;
+    }
+
+    .banner2-content h2 {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        margin-bottom: 24px;
+    }
+
+    .banner2-content h3 {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        margin-bottom: 32px;
+    }
+
+    /* ========== 依系列選購 ========== */
+    .card2 {
+        padding: 0 12px;
+        margin: 48px auto;
+    }
+
+    .card2 h1 {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+    }
+
+    .card2 ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .item-card {
+        flex-basis: calc(50% - 4px);
+    }
+
+    .card-text h2 {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        margin-bottom: 4px;
+    }
+
+    .card-text h3 {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+    }
+
+    /* ========== 穿搭靈感相片牆 ========== */
+    .style {
+        padding: 0;
+        margin-bottom: 48px;
+    }
+
+    .style h1 {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        padding: 0 24px;
+        margin-bottom: 12px;
+    }
+
+    .photo {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 0;
+        margin-left: 12px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .photo::-webkit-scrollbar {
+        display: none;
+    }
+
+    .photo img {
+        flex: 0 0 280px;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .photo img:last-child {
+        margin-right: 12px;
+    }
+
+    /* ========== DISCOUNT ========== */
+    .discount-content {
+        padding: 24px;
+        gap: 16px;
+    }
+    
+    .discount h2 {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .discount .button{
+        padding: 8px 16px;
+    }
+
+
+    /* ========== FOOTER ========== */
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 48px;
+        gap: 24px;
+        padding: 0 24px;
+    }
+
+    .footer-nav img {
+        width: 120px;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-nav ul a {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .copyright {
+        padding: 24px 12px 0;
+        margin-bottom: 48px;
+    }
+
+    .copyright h4 {
+        font-size: 12px;
+    }
+}
