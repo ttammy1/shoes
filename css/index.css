@@ -1,20 +1,5 @@
 @import url('reset.css');
 
-/* ========== 全域設定 ========== */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* ========== HEADER ========== */
 header {
     background-color: #fff;
